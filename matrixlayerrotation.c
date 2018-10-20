@@ -70,7 +70,7 @@ void reverse_tmp_ring(char even, int *tmp, int **matrix, int matrix_rows, int ma
 
 void shift(int *ring, int len)
 {
-        int tmp = ring[len-1];
+    int tmp = ring[len-1];
     memmove((void*)(ring+1), (void*)ring, (len-1) * sizeof(int));
     ring[0] = tmp;
 }
